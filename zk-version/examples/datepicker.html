@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title> 我的日历</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/style.css" rel="stylesheet" media="screen">
+    <link href="../css/schedule.css" rel="stylesheet">
+</head>
+<body>
+<div class="zk-wrap">
+
+<div class="zk-head">
+    <div class="inner">
+        <div class="top">
+            <div class="info">
+                <div class="set-nav">
+                    <ul>
+                        <li><a href="#" class="icon1">账号设置</a></li>
+                        <li><a href="#" class="icon2 act2">我的账户</a></li>
+                        <li><a href="#" class="icon3">退出</a></li>
+                    </ul>
+                </div>
+                <div class="pic"><img src="../images/pic.jpg"/></div>
+                <a href="#">私信（3）</a><em></em>
+                <a href="#">通知（1）</a>
+            </div>
+            <div class="logo"></div>
+            <div class="search">
+                <input class="input" type="text"/>
+                <input class="submit" type="button" value=""/>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="sec">
+                <a href="#" class="icon1">日程安排</a>
+                <a href="#" class="icon2">发布项目</a>
+                <a href="#" class="icon3">项目记录</a>
+            </div>
+            <div class="nav">
+                <a href="#">首页</a><em></em>
+                <a href="#">服务分类</a><em></em>
+                <a href="#">我的预约</a>
+                <a href="#" class="act">我的项目</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="zk-cal">
+    <div class="inner">
+        <div class="left">
+            <div id="datepicker"></div>
+        </div>
+        <div class="right">
+            <div class="mod shadow done">
+                <div class="title">
+                    <h2>2014年2月10日 待办事项：</h2>
+                </div>
+                <div class="tbs">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <thead>
+                        <tr>
+                            <td width="12%">订单号</td>
+                            <td width="23%" align="center">时段</td>
+                            <td width="35%"><label>
+                                <select name="select" id="select">
+                                    <option>全部项目</option>
+                                </select>
+                            </label></td>
+                            <td width="13%" align="center">昵称</td>
+                            <td width="17%" align="right">订单状态</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>0036323</td>
+                            <td align="center">11:00-12:00</td>
+                            <td> 大学生面试高级技巧</td>
+                            <td align="center">张导师</td>
+                            <td align="right">未付款</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td align="center">&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td align="center">&nbsp;</td>
+                            <td align="right">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td align="center">&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td align="center">&nbsp;</td>
+                            <td align="right">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td align="center">&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td align="center">&nbsp;</td>
+                            <td align="right">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td align="center">&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td align="center">&nbsp;</td>
+                            <td align="right">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td align="center">&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td align="center">&nbsp;</td>
+                            <td align="right">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td align="center">&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td align="center">&nbsp;</td>
+                            <td align="right">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td align="center">&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td align="center">&nbsp;</td>
+                            <td align="right">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td align="center">&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td align="center">&nbsp;</td>
+                            <td align="right">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td align="center">&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td align="center">&nbsp;</td>
+                            <td align="right">&nbsp;</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <a href="#" class="btn-more">加载更多</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="zk-foot">
+    <div class="inner">
+        <div class="follow">
+            <span>关注我们  </span>
+            <a href="#" class="btn-sina"></a>
+            <a href="#" class="btn-wx"></a>
+        </div>
+        <div class="fmenu">
+            <a href="#">如何预约</a> |
+            <a href="#">收费规则</a> |
+            <a href="#">如何申请为导师</a> |
+            <a href="#">关于天天解惑</a> |
+            <a href="#">联系我们</a> |
+            <a href="#">招聘信息</a>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<script src="../bower_components/jquery/dist/jquery.js"></script>
+<script src="../bower_components/moment/moment.js"></script>
+<script src="../components/datepicker.js"></script>
+<script src="./datepicker.js"></script>
+</body>
+</html>

@@ -36,7 +36,7 @@ $(function () {
     plugins: 'regionCell',
     events: function (month, activeDate, callback) {
       $.ajax({
-        url: './json/' + activeDate + '.json',
+        url: './json/schedule/' + activeDate + '.json',
         data: {
           month: month,
           activeDate: activeDate
