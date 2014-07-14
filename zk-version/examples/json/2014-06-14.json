@@ -1,0 +1,25 @@
+{
+  "schedule": ["2014-06-14"],
+  "currentDate": "2014-07-14",
+  "activeDate": "2014-06-14",
+  "scheduleItems": [
+    {
+      "index": 26,
+      "start": "13:00",
+      "end": "13:30",
+      "status": ""
+    },
+    {
+      "index": 32,
+      "start": "16:00",
+      "end": "16:30",
+      "status": "appointed"
+    },
+    {
+      "index": 14,
+      "start": "07:00",
+      "end": "07:30",
+      "status": ""
+    }
+  ]
+}

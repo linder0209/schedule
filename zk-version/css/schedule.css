@@ -1,0 +1,82 @@
+/**
+* 重写部分样式
+**/
+.zk-wrap .calendar .year .prev,
+.zk-wrap .calendar .year .next,
+.zk-cal .set .sbox li {
+  cursor: pointer;
+}
+
+.zk-mask {
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.zk-cal .set .btn-box a.disable {
+  cursor: default;
+}
+
+.zk-cal .set .sbox li {
+  background-color: #fff;
+  margin: 0;
+  padding: 0 0 5px 5px;
+}
+
+.calendar .day span {
+  line-height: 46px;
+  width: 14.2857%;
+  /*box-sizing: border-box;*/
+  display: block;
+  float: left;
+  text-align: center;
+  cursor: pointer;
+  color: #333;
+}
+
+.calendar .day span.weekend {
+  color: #FFADAD;
+}
+
+.calendar .day span.selected,
+.calendar .day span.active {
+  background: no-repeat 50% 50%;
+  color: #fff;
+}
+
+.calendar .day span.selected {
+  background-image: url("../images/day-selected.png");
+}
+
+.calendar .day span.active {
+  background-image: url("../images/day-active.png");
+}
+
+.calendar .day span.prev,
+.calendar .day span.next {
+  color: #ddd;
+}
+
+.tooltip {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 1px solid #C6CADC;
+  border-radius: 5px;
+  color: #999999;
+  font-size: 12px;
+  padding: 3px 5px;
+  position: absolute;
+  box-shadow: 1px 1px 3px 1px #C6CADC;
+}
+
+.range-box {
+  position: absolute;
+  border: 1px dotted #026890;
+  display: none;
+}
+
+.calendar-item-inner {
+  background-color: #EBF6FF;
+  width: 100%;
+  height: 100%;
+}

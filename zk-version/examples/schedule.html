@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>日程设置</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../bower_components/jquery-ui/themes/redmond/jquery-ui.css" rel="stylesheet" media="screen">
+  <link href="../css/style.css" rel="stylesheet" media="screen">
+  <link href="../css/schedule.css" rel="stylesheet">
+</head>
+<body>
+<div class="zk-wrap">
+
+  <div class="zk-head">
+    <div class="inner">
+      <div class="top">
+        <div class="info">
+          <div class="set-nav">
+            <ul>
+              <li><a class="icon1" href="#">账号设置</a></li>
+              <li><a class="icon2 act2" href="#">我的账户</a></li>
+              <li><a class="icon3" href="#">退出</a></li>
+            </ul>
+          </div>
+          <div class="pic"><img src="../images/pic.jpg"></div>
+          <a href="#">私信（3）</a><em></em>
+          <a href="#">通知（1）</a>
+        </div>
+        <div class="logo"></div>
+        <div class="search">
+          <input type="text" class="input">
+          <input type="button" value="" class="submit">
+        </div>
+      </div>
+      <div class="menu">
+        <div class="sec">
+          <a class="icon1" href="#">日程安排</a>
+          <a class="icon2" href="#">发布项目</a>
+          <a class="icon3" href="#">项目记录</a>
+        </div>
+        <div class="nav">
+          <a href="#">首页</a><em></em>
+          <a href="#">服务分类</a><em></em>
+          <a href="#">我的预约</a>
+          <a class="act" href="#">我的项目</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="zk-main zk-publish zk-cal">
+    <div class="inner">
+      <div class="tips">
+        <div class="txt">
+          <p style="font-size:14px;"> 提示：选择某一天，进行您的日程设置，以便其他用户预约您的时间。</p>
+
+          <p class="p2"><strong>您还未发布项目，需要发布至少一个指导项目，其他人才可以预约您的时间。 </strong> <a class="link1" href="#">去设置项目</a></p>
+        </div>
+      </div>
+
+      <div id="schedule"></div>
+
+    </div>
+  </div>
+
+  <div class="zk-foot">
+    <div class="inner">
+      <div class="follow">
+        <span>关注我们  </span>
+        <a class="btn-sina" href="#"></a>
+        <a class="btn-wx" href="#"></a>
+      </div>
+      <div class="fmenu">
+        <a href="#">如何预约</a> |
+        <a href="#">收费规则</a> |
+        <a href="#">如何申请为导师</a> |
+        <a href="#">关于天天解惑</a> |
+        <a href="#">联系我们</a> |
+        <a href="#">招聘信息</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="scheduleConfirmDialog" class="zk-mask" style="display: none;">
+    <div class="mod zk-pop zk-pop-min">
+      <a class="btn-close" href="#" data-dialog-action="close"></a>
+
+      <div style="font-size:16px;padding:40px 0 30px;" class="tip-txt">
+        <strong>已修改当日日程，是否需要保存？ </strong>
+      </div>
+      <div class="btn-area">
+        <a class="btn" href="#"  data-dialog-action="yes">是</a>
+        <a class="btn" href="#"  data-dialog-action="no">否</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="../bower_components/jquery/dist/jquery.js"></script>
+<script src="../bower_components/jquery-ui/jquery-ui.js"></script>
+<script src="../bower_components/moment/moment.js"></script>
+<script src="../components/schedule.js"></script>
+<script src="../components/plugins/schedule-plugin-region.js"></script>
+<script src="./schedule.js"></script>
+</body>
+</html>
