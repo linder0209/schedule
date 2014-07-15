@@ -1,0 +1,23 @@
+{"schedules": [
+  {
+    "date": "2014-08-22",
+    "status": "chose"
+  },
+  {
+    "date": "2014-08-24",
+    "status": "chose"
+  },
+  {
+    "date": "2014-08-25",
+    "status": "chose"
+  },
+  {
+    "date": "2014-08-28",
+    "status": "chosen"
+  },
+  {
+    "date": "2014-08-31",
+    "status": "choosing"
+  }
+]}
+

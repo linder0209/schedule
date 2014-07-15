@@ -1,0 +1,16 @@
+{
+  "name": "schedule",
+  "version": "0.1.0",
+  "authors": [
+    "linder0209 <linder0209@126.com>"
+  ],
+  "description": "schedule",
+  "keywords": [
+    "schedule"
+  ],
+  "dependencies": {
+    "jquery": "~1.11.1",
+    "moment": "~2.7.0"
+  },
+  "license": "MIT"
+}

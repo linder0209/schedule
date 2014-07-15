@@ -1,0 +1,53 @@
+<div class="calendar-panel">
+  <div class="left">
+    <div class="mod shadow cal">
+      <div class="title">
+        <h2>日历表</h2>
+      </div>
+      <div class="calendar">
+        <div class="year">
+          <span class="prev" data-prev-next="prev"></span>
+          <strong data-current-date>{{:currentDate}}</strong>
+          <span class="next" data-prev-next="next"></span>
+        </div>
+        <div class="week">
+          <ul>
+            <li>一</li>
+            <li>二</li>
+            <li>三</li>
+            <li>四</li>
+            <li>五</li>
+            <li class="col">六</li>
+            <li class="col">日</li>
+          </ul>
+        </div>
+        <div class="day" data-days>
+          {{:daysHtml}}
+        </div>
+        <div class="add">
+          <span class="icon1">已添加设置的日期</span>
+          <span class="icon2">当前日期</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="right">
+    <div class="mod shadow set">
+      <div class="title">
+        <span>最小时段：30分钟</span>
+
+        <h2><i data-current-ymd>{{:currentYMD}}</i>的日程设置：</h2>
+      </div>
+      <div class="sbox">
+        <ul data-calendar-items style="-moz-user-select: none;">
+          {{:calendarItems}}
+        </ul>
+      </div>
+      <div class="btn-box">
+        <label><input type="checkbox" data-select-all> 选择当日全部时段 </label>
+        <a style="padding:9px  15px;" class="btn" href="#" data-clear-data>清空当日时段</a>
+        <a class="btn" href="#" data-save-data>保存</a>
+      </div>
+    </div>
+  </div>
+</div>

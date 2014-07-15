@@ -1,0 +1,27 @@
+<div class="calendar">
+  <div class="year">
+    <span class="prev" data-prev-next="prev"></span>
+    <strong data-current-date>{{:currentDate}}</strong>
+    <span class="next" data-prev-next="next"></span>
+  </div>
+  <div class="week">
+    <ul>
+      <li>一</li>
+      <li>二</li>
+      <li>三</li>
+      <li>四</li>
+      <li>五</li>
+      <li class="col">六</li>
+      <li class="col">日</li>
+    </ul>
+  </div>
+  <div class="day calendar-day" data-days>
+    {{:daysHtml}}
+  </div>
+
+  <div class="exp">
+    <span class="icon1">有课可选</span>
+    <span class="icon2">有课可选且已有选择</span>
+    <span class="icon3">课已被选完</span>
+  </div>
+</div>
